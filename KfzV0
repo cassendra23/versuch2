@@ -1,0 +1,20 @@
+package se1c3;
+
+public class KfzV0 {
+	
+	//public Attributes(variables within a class)
+	public int sitze, tankinhalt;
+	public float verbrauch;
+	
+	//Methode reichweite, Rueckgabewert=reichweite(km)
+	public float reichweite() {
+	
+		return (tankinhalt / verbrauch);
+	}
+	
+	//Methode Spritverbrauch, km=Entfernung, Rueckgabewert=Spritverbrauch(Liter)
+	public float Spritverbrauch(int km) {
+		
+		return (km / verbrauch);
+	}
+}
