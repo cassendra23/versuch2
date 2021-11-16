@@ -1,0 +1,20 @@
+package se1c3;
+
+public class KfzDemo {
+
+	public static void main(String[] args) {
+		
+		//instance minivan
+		KfzV0 minivan = new KfzV0();
+		minivan.sitze = 6;
+		minivan.tankinhalt = 70;
+		minivan.verbrauch = 14;
+		
+		//moegliche Reichweite berechnen
+		float reichweite = minivan.tankinhalt / minivan.verbrauch;
+		
+		System.out.println("Reichweite: " + reichweite);
+
+	}
+
+}
