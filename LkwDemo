@@ -1,0 +1,19 @@
+package se1c3;
+
+public class LkwDemo {
+
+	public static void main(String[] args) {
+		
+		Kfz sportWagen = new Kfz(2, 45, 11);
+		Lkw magirus = new Lkw(2, 45, 11);
+		
+		System.out.println("Reichweite: " + sportWagen.reichweite());
+		System.out.println("Reichweite: " + magirus.reichweite());
+
+		//Spritverbrauch+1 from method Spritverbrauch in Lkw
+		System.out.println("Spritverbrauch: " + sportWagen.Spritverbrauch(252)); //Kfz
+		System.out.println("Spritverbrauch: " + magirus.Spritverbrauch(252)); //Lkw
+
+	}
+
+}
