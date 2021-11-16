@@ -1,0 +1,23 @@
+package se1c3;
+
+public class ReturnDemo {
+
+	public static void main(String[] args) {
+		
+		KfzV0 minivan = new KfzV0();
+		minivan.sitze = 6;
+		minivan.tankinhalt = 70;
+		minivan.verbrauch = 14;
+		
+		KfzV0 sportwagen = new KfzV0();
+		sportwagen.sitze = 2;
+		sportwagen.tankinhalt = 45;
+		sportwagen.verbrauch = 11;
+		
+		//Reichweite ausgeben, Methode reichweite in KfzV0
+		System.out.println("Reichweite: " + minivan.reichweite());
+		System.out.println("Reichweite: " + sportwagen.reichweite());
+
+	}
+
+}
