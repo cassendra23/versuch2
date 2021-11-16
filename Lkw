@@ -1,0 +1,22 @@
+package se1c3;
+
+//inheritance from Kfz
+public class Lkw extends Kfz{
+	
+	int ladeFlaeche;
+	boolean hatAnhaenger;
+	
+	//Konstruktor Lkw
+	Lkw(int sitze, int tankinhalt, float verbrauch) {
+		//Vererbung
+		super(sitze, tankinhalt, verbrauch);
+	}
+	
+	//Methode Lkw
+	public float Spritverbrauch(int km) {
+		
+		return ((km / getverbrauch())+1);
+	}
+	
+
+}
