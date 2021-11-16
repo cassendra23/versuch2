@@ -1,0 +1,21 @@
+package se1c3;
+
+public class KonstruktorDemo {
+
+	public static void main(String[] args) {
+		
+		Kfz minivan = new Kfz(6, 70, 14);
+		
+		Kfz sportwagen = new Kfz(2, 45, 11);
+		
+		
+		System.out.println("Reichweite: " + minivan.reichweite());
+		System.out.println("Reichweite: " + sportwagen.reichweite());
+
+		//von Methode Spritverbrauch(int km), km=252
+		System.out.println("Spritverbrauch: " + minivan.Spritverbrauch(252));
+		System.out.println("Spritverbrauch: " + sportwagen.Spritverbrauch(252));
+
+	}
+
+}
