@@ -1,0 +1,28 @@
+package se1c3;
+
+public class ZweiKfzDemo {
+
+	public static void main(String[] args) {
+		
+		//instance minivan
+		KfzV0 minivan = new KfzV0();
+		minivan.sitze = 6;
+		minivan.tankinhalt = 70;
+		minivan.verbrauch = 14;
+		
+		//instance sportwagen
+		KfzV0 sportwagen = new KfzV0();
+		sportwagen.sitze = 2;
+		sportwagen.tankinhalt = 45;
+		sportwagen.verbrauch = 11;
+		
+		//moegliche Reichweite berechnen
+		float reichweite1 = minivan.tankinhalt / minivan.verbrauch;
+		float reichweite2 = sportwagen.tankinhalt / sportwagen.verbrauch;
+		
+		System.out.println("Reichweite: " + reichweite1 + " km");
+		System.out.println("Reichweite: " + reichweite2 + " km");
+
+	}
+
+}
